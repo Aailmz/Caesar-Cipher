@@ -76,7 +76,7 @@ function main() {
                 break;
                 
             case '3':
-                echo "Goodbye!\n";
+                echo "Thank you for using Caesar Cipher. Goodbye!\n";
                 exit(0);
                 
             default:
