@@ -25,21 +25,31 @@ def brute_force_caesar(ciphertext):
         print(f"Shift {shift}: {decrypted_text}")
 
 def main():
-    choice = input("Select option (1: Encrypt, 2: Solve): ")
+    while True:
+        print("\nCaesar Cipher Menu:")
+        print("1: Encrypt")
+        print("2: Solve")
+        print("3: Exit")
+        
+        choice = input("Select option: ")
 
-    if choice == '1':
-        plaintext = input("Input text: ")
-        shift = int(input("Input shift value: "))
-        encrypted = encrypt_caesar(plaintext, shift)
-        print(f"Result: {encrypted}")
+        if choice == '1':
+            plaintext = input("Input text: ")
+            shift = int(input("Input shift value: "))
+            encrypted = encrypt_caesar(plaintext, shift)
+            print(f"Result: {encrypted}")
 
-    elif choice == '2':
-        ciphertext = input("Input encrypted text: ")
-        print("Solving Encryption...")
-        brute_force_caesar(ciphertext)
+        elif choice == '2':
+            ciphertext = input("Input encrypted text: ")
+            print("Solving Encryption...")
+            brute_force_caesar(ciphertext)
 
-    else:
-        print("Not valid.")
+        elif choice == '3':
+            print("Thank you for using Caesar Cipher. Goodbye!")
+            break
+
+        else:
+            print("Not valid. Please select 1, 2, or 3.")
 
 if __name__ == "__main__":
     main()
