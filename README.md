@@ -63,3 +63,20 @@ This project only requires Node.js to be installed on your system.
    ```
    node caesarcipher.js
    ```
+
+## PHP
+### Prerequisites
+This project only requires PHP to be installed on your system.
+
+### Installation
+1. **Ensure PHP is installed:**
+   You can download and install PHP from [php.net](https://www.php.net/).
+2. **Clone this repository:**
+   ```bash
+   git clone https://github.com/Aailmz/Caesar-Cipher.git
+   cd Caesar-Cipher
+   ```
+3. **Run this at terminal to start:**
+   ```
+   php caesarcipher.php
+   ```
